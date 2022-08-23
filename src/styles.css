@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: lightgray;
+    margin: 0;
+    padding-top: 3em;
+}
+
+.center-txt {
+    text-align: center;
+}
+
+/* Hide number input spinner on Webkit browsers */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide number input spinner on Gecko browsers */
+input[type=number] {
+    -moz-appearance: textfield;
+}

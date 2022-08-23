@@ -1,0 +1,38 @@
+<nav>
+    <ul>
+        <!-- Left -->
+        <li id="logo">
+            <a [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['']">DDShop</a>
+        </li>
+        <li>
+            <a [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['#']">Sales</a>
+        </li>
+        <li>
+            <a [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/categories']">Categories</a>
+        </li>
+        <li>
+            <a [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/about']">About</a>
+        </li>
+        <li>
+            <a [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}" href="javascript:void(0)" (click)="toggleSearch()"><i class="bi bi-search"></i></a>
+        </li>
+        <!-- Right -->
+        <li class="right dropdown">
+            <a href="javascript:void(0)">{{ email }}<i class="bi bi-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a [routerLink]="['/login']">Login</a>
+                <a [routerLink]="['/register']">Register</a>
+                <hr class="separator">
+                <a [routerLink]="['/admin']">Admin page</a>
+                <a href="javascript:void(0)" (click)="logout()">Logout</a>
+            </div>
+        </li>
+        <li class="right">
+            <a [routerLink]="['#']">Cart: <span class="counter">{{ cartCounter }}</span></a>
+        </li>
+    </ul>
+
+    <div [hidden]="isHidden" class="search">
+        <input id="searchbox" type="search" placeholder="Search any product">
+    </div>
+</nav>

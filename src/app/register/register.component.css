@@ -1,0 +1,23 @@
+.register {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+.register label,
+.register input {
+    display: inline-block;
+    margin: 3px 10px;
+}
+
+.register label {
+    text-align: left;
+    min-width: 135px;
+}
+
+button {
+    margin: 5px;
+}

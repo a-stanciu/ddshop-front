@@ -1,0 +1,26 @@
+.admin-container {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.border {
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.actions {
+    display: inline-block;
+    
+}
+
+.properties {
+    margin: 50px;
+    display: inline-block;
+}

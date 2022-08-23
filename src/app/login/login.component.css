@@ -1,0 +1,27 @@
+.login {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+.login label,
+.login input {
+    display: inline-block;
+    margin: 3px 10px;
+}
+
+.login label {
+    text-align: left;
+    min-width: 110px;
+}
+
+button {
+    margin: 5px;
+}
+
+#remember {
+    margin: 0;
+}
